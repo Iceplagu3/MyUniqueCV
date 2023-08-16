@@ -1,3 +1,9 @@
+function showAlert(){
+    window.location.href="formacion.html";
+}
+
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
 const parrafoClickeable = document.getElementById("pClick");
