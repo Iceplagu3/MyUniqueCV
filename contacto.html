@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Public Sans'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/stylo.css">
+  </head>
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="container-nav align-left"> 
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link perfil-link" href="index.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link formacion-link" href="formacion.html">Formacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link experiencia-link" href="experiencia.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contacto-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container"></div>
+        <div id="TITULONAME" class="titulo"> CONTACTO</div>
+        <div class="row">
+            <div class="column"> 
+                <h2 class="resaltar-color">¡Contáctame para cualquier consulta o solicitud de información!</h2>
+	                    
+                        <div class="container2">
+                            <form class="NombreForm" action="guardar.php" method="post">
+                                <div class="form-group">
+                                    <label for="nombre"><b>Nombre</b></label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Apellido">
+                                    <small id="nombreError" class="text-danger"></small>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email"><b>Correo electrónico</b></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="correo@dominio.com">
+                                    <small id="emailError" class="text-danger"></small>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="mensaje"><b>Mensaje</b></label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="..."></textarea>
+                                    <small id="mensajeError" class="text-danger"></small>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="pais"><b>País</b></label>
+                                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Escribe el nombre de tu país" oninput="autocompletarPais()">
+                                    <div id="sugerencias"></div>
+                                    <small id="paisError" class="text-danger"></small>
+                                </div>
+                            </form>
+                            <button class="btn" type="submit" onclick="enviarFormulario()">Enviar</button>
+                        </div>   
+
+    
+            </div>
+            <div class="column">
+                <h2 class="resaltar-color">HEIBERG DANILO CRUZ TOVAR <br> C.C. 1.007.429.470 <br> Carrera 32 #13-131 Soacha, Cundinamarca, Colombia <br> 3208248101<br> danilo.cruz.0809@gmail.com</h2>
+            </div>
+            
+        </div> 
+        
+           
+            
+    </div>
+    
+    <div class="button">
+        <button class="btn" onclick="showAlertA()">Anterior</button>
+    </div>
+    
+        <div>
+            <footer>
+                
+                <div class="imagenesfooter">
+                    <img src="imagenes/jsicon.png" alt="JS">    
+                    <img src="imagenes/cssicon.png" alt="CSS">
+                    <img src="imagenes/htmlicon.png" alt="HTML5">
+                    <img src="imagenes/pythonicon.png" alt="python">
+                    <img src="imagenes/Cicon.png" alt="C++">
+                    <img src="imagenes/Javaicon.png" alt="Java">
+                    <img src="imagenes/giticon.png" alt="Git">
+                </div>
+                <p id="leyenda"><strong>2023. Todos los derechos reservados. - Danilo Cruz.</strong></p>
+            </footer>
+        </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
