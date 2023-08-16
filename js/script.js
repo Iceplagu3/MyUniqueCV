@@ -1,3 +1,17 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+const parrafoClickeable = document.getElementById("pClick");
+const modal = document.getElementById("miModal");
+const cerrarModal = document.getElementById("cerrarModal");
+
+parrafoClickeable.addEventListener("click", function() {
+    modal.style.display = "block";
+});
+
+cerrarModal.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+});
 const paises = [
     "Andorra", "Antigua y Barbuda",  "Argentina", "Bahamas", "Barbados", "Belice", "Bolivia",
     "Brasil", "Canadá", "Chile", "Colombia", "Costa Rica", "Cuba", "Dominica",
@@ -32,15 +46,14 @@ function autocompletarPais() {
 }
 
 
-// Obtiene el nombre de la página actual (sin la extensión .html)
+
 var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
 
-// Remueve la clase "active" de todos los enlaces
 document.querySelectorAll('.nav-link').forEach(function(link) {
     link.classList.remove('active');
 });
 
-// Agrega la clase "active" al enlace de la página actual
+
 if (currentPage === 'index') {
     document.querySelector('.perfil-link').classList.add('active');
 } else if (currentPage === 'formacion') {
@@ -56,23 +69,8 @@ document.querySelector("button.button-menu-toggle")
            document.querySelector(".nav-links").classList.toggle("nav-links-responsive")
         }
         );
-
-        const parrafoClickeable = document.getElementById("pClick");
-        const modal = document.getElementById("miModal");
-        const cerrarModal = document.getElementById("cerrarModal");
-    
-        parrafoClickeable.addEventListener("click", function() {
-            modal.style.display = "block";
-        });
-    
-        cerrarModal.addEventListener("click", function() {
-            modal.style.display = "none";
-        });
-    
-    
-    
-       
         
+               
         function enviarFormulario() {
             const nombre = document.getElementById("nombre").value;
             const email = document.getElementById("email").value;
@@ -126,12 +124,10 @@ document.querySelector("button.button-menu-toggle")
         };
 
 
-        
-        
+      
         
         
  
-
 
 function showAlertS() {
     const paginaActual = obtenerPaginaActual();
